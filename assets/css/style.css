@@ -89,6 +89,16 @@ button {
   border-radius: 25px;
 }
 
+.about {
+  font-size: 30px;
+  color: white;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+/* put these at the bottom: */
+
 .hide {
   display: none;
 }

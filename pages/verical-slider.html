@@ -11,11 +11,68 @@
     <title>Vertical Slider</title>
   </head>
   <body>
-    <header class="header">
-      <h1>Vertical Slider</h1>
-    </header>
-    <a href="../index.html" class="home">
-      <button class="btn">Home</button>
-    </a>
+    <div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: #bcbe3a">
+          <h1>Coder</h1>
+          <p>In Yellow</p>
+        </div>
+
+        <div style="background-color: #85117f">
+          <h1>Computer Screen</h1>
+          <p>In Purple</p>
+        </div>
+
+        <div style="background-color: #0ec04f">
+          <h1>Circuits</h1>
+          <p>In Green</p>
+        </div>
+
+        <div style="background-color: dodgerblue">
+          <h1>Tech Brain</h1>
+          <p>In Blue</p>
+        </div>
+      </div>
+      <!-- reverse the image order because of the up and down flow of the page -->
+      <div class="right-slide">
+        <div
+          style="
+            background-image: url(../assets/images/vertical-slider/blue.png);
+          "
+        ></div>
+
+        <div
+          style="
+            background-image: url(../assets/images/vertical-slider/green.png);
+          "
+        ></div>
+        <div
+          style="
+            background-image: url(../assets/images/vertical-slider/purple.png);
+          "
+        ></div>
+        <div
+          style="
+            background-image: url(../assets/images/vertical-slider/yellow.png);
+          "
+        ></div>
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <a href="../index.html" class="home">
+        <div class="btn2"><i class="fas fa-home icon"></i></div>
+      </a>
+    </div>
+
+    <script src="../assets/js/vs.js"></script>
   </body>
 </html>
