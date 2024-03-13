@@ -1,18 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 .backer {
-  background-color: #434343;
+  background-image: linear-gradient(to bottom, #000, #434343);
+  padding-bottom: 20px;
 }
 
 .header {
   width: 100%;
-  height: 55px;
-  background-color: #c0d4db;
+  max-height: 50px;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(154, 154, 154, 0.5),
+    rgba(23, 22, 22, 0.5)
+  );
   display: flex;
   flex-direction: row;
   padding: 0;
-
+  color: #0ae6ff;
   justify-content: space-between;
+  border-bottom: 2px solid #0ae6ff;
   align-items: center;
-  border: 2px solid rgb(141, 141, 141);
 }
 
 .header h1 {
@@ -31,8 +40,8 @@ button {
 }
 
 .nav-toggle {
-  background-color: #c0d4db;
   border-radius: 25px;
+  background: transparent;
 }
 
 .icon {
@@ -40,19 +49,12 @@ button {
   height: 45px;
   padding: 5px;
   font-size: 40px;
-}
-
-.icon-adj {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  font-size: 45px;
-  color: crimson;
+  color: #0ae6ff;
 }
 
 .nav-bar a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 20px;
 
   min-width: 100%;
@@ -60,19 +62,34 @@ button {
   border-radius: 8px;
 }
 
+.icon-adj {
+  margin: 0;
+  padding: 0;
+
+  font-size: 45px;
+  color: crimson !important;
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  background-color: #272727e1;
+}
+
 .nav-bar li {
   width: 100%;
   margin: 10px 5px;
+  color: white;
 }
 
 .nav-bar a:hover {
-  color: #434343;
-  background-color: #c0d4db;
+  color: #0ae6ff;
 }
 
 .nav-menu {
   width: 100%;
-  background-color: #f1f1f1a0;
   height: fit-content;
   overflow: hidden;
   border-radius: 25px;
@@ -92,9 +109,14 @@ button {
 .about {
   font-size: 30px;
   color: white;
-  max-width: 500px;
+  width: 90%;
+  max-width: 800px;
   margin: auto;
   text-align: center;
+}
+
+.about img {
+  width: 100%;
 }
 
 /* put these at the bottom: */
